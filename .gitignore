@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+#Project Specific
+code-scorpion
+
 # Object files
 *.o
 *.ko
