@@ -5,3 +5,6 @@ Ctrl-C sends a SIGINT signal to the current process which causes it to terminate
 Ctrl-Z sends a SIGTSTP signal to the current process which causes it to suspend.
 Ctrl-S stops data from being transmitted to the terminal until you press Ctrl-Q.
 Turn off all output processing features by turning off the OPOST flag.
+perror() comes from `<stdio.h>`. perror() looks at the global errno variable and prints a descriptive error message for it. It also prints the string given to it before it prints the error message, which is meant to provide context about what part of your code caused the error.
+We exit the program with an exit status of 1, which indicates failure (as would any non-zero value).
+`EAGAIN` is returned on Cygwin based terminals when `read()` times out.
