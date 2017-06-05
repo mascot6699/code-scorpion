@@ -14,3 +14,5 @@ Size of the terminal by simply calling `ioctl()` with the `TIOCGWINSZ(short for 
 The C command (Cursor Forward) moves the cursor to the right.
 The B command (Cursor Down) moves the cursor down.
 The n command (Device Status Report) can be used to query the terminal for status information.
+The h and l commands (Set Mode, Reset Mode) are used to turn on and turn off various terminal features or “modes”.
+The K command (Erase In Line) erases part of the current line.
