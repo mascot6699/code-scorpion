@@ -16,3 +16,4 @@ The B command (Cursor Down) moves the cursor down.
 The n command (Device Status Report) can be used to query the terminal for status information.
 The h and l commands (Set Mode, Reset Mode) are used to turn on and turn off various terminal features or “modes”.
 The K command (Erase In Line) erases part of the current line.
+By setting the first constant in the enum to 1000, the rest of the constants get incrementing values of 1001, 1002, 1003, and so on.
