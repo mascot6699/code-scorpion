@@ -8,4 +8,5 @@ Turn off all output processing features by turning off the OPOST flag.
 perror() comes from `<stdio.h>`. perror() looks at the global errno variable and prints a descriptive error message for it. It also prints the string given to it before it prints the error message, which is meant to provide context about what part of your code caused the error.
 We exit the program with an exit status of 1, which indicates failure (as would any non-zero value).
 `EAGAIN` is returned on Cygwin based terminals when `read()` times out.
-Character in lower or capital when anded with 31 give 1-based index from a. `ord("a") & 31` == `ord("a") & 31` == 1 
+Character in lower or capital when anded with 31 give 1-based index from a. `ord("a") & 31` == `ord("a") & 31` == 1.
+An escape sequence to the terminal. Escape sequences always start with an escape character `\x1b(27)` followed by a `[` character.
