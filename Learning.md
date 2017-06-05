@@ -10,3 +10,4 @@ We exit the program with an exit status of 1, which indicates failure (as would 
 `EAGAIN` is returned on Cygwin based terminals when `read()` times out.
 Character in lower or capital when anded with 31 give 1-based index from a. `ord("a") & 31` == `ord("a") & 31` == 1.
 An escape sequence to the terminal. Escape sequences always start with an escape character `\x1b(27)` followed by a `[` character.
+Size of the terminal by simply calling `ioctl()` with the `TIOCGWINSZ(short for Terminal Input/Output Control Get WINdow SiZe)` request.
